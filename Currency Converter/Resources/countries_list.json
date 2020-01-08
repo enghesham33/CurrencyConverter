@@ -1,0 +1,61 @@
+[
+    {
+      "name": "United States",
+      "key": "US",
+      "currency": "USD"
+    },
+    
+    {
+      "name": "Egypt",
+      "key": "EG",
+      "currency": "EGP"
+    },
+    
+    {
+      "name": "Bahrain",
+      "key": "BH",
+      "currency": "BHD"
+    },
+    
+    {
+      "name": "United Kingdom",
+      "key": "GB",
+      "currency": "GBP"
+    },
+    
+    {
+      "name": "India",
+      "key": "IN",
+      "currency": "INR"
+    },
+    
+    {
+      "name": "Australia",
+      "key": "AU",
+      "currency": "AUD"
+    },
+    
+    {
+      "name": "Kuwait",
+      "key": "KW",
+      "currency": "KWD"
+    },
+    
+    {
+      "name": "United Arab Emirates",
+      "key": "AE",
+      "currency": "AED"
+    },
+    
+    {
+      "name": "Saudi Arabia",
+      "key": "SA",
+      "currency": "SAR"
+    },
+    
+    {
+      "name": "Japan",
+      "key": "JP",
+      "currency": "JPY"
+    }
+]
