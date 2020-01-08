@@ -15,6 +15,7 @@ class CountriesVC: BaseVC {
     
     var viewModel: CountriesViewModel!
     var countries = [Country]()
+    var converterScreenSegueId = "ConverterSegue"
 
     @IBOutlet weak var countriesTableView: UITableView!
     
@@ -43,10 +44,13 @@ class CountriesVC: BaseVC {
         
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == converterScreenSegueId {
+            if let destinationVC = segue.destination as? ConverterVC, let selectedCountry = sender as? Country {
+                destinationVC.convertableRate = selectedCountry.rate
+                destinationVC.convertableCurrencyName = selectedCountry.currency
+            }
+        }
     }
 
     func initTableView() {
@@ -66,6 +70,10 @@ extension CountriesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CountryCell.identifier, for: indexPath) as! CountryCell
         cell.populateData(country: self.countries[indexPath.row])
+        cell.addTapGesture { [weak self] _ in
+            guard let strongSelf = self else {return}
+            strongSelf.performSegue(withIdentifier: strongSelf.converterScreenSegueId, sender: strongSelf.countries[indexPath.row])
+        }
         return cell
     }
     

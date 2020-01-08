@@ -61,11 +61,84 @@
                     </view>
                     <connections>
                         <outlet property="countriesTableView" destination="Iy7-S7-kFJ" id="2Am-Ft-Qmg"/>
+                        <segue destination="xTl-hR-Dn0" kind="presentation" identifier="ConverterSegue" id="J69-1G-HKR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--ConverterVC-->
+        <scene sceneID="FYf-5L-4Ol">
+            <objects>
+                <viewController storyboardIdentifier="ConverterVC" id="xTl-hR-Dn0" customClass="ConverterVC" customModule="Currency_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d1R-fz-EP1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" textAlignment="center" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="FE7-hX-RAv">
+                                <rect key="frame" x="32" y="75" width="290" height="67.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDd-k2-fdc">
+                                <rect key="frame" x="330" y="98" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-Yq-h8K">
+                                <rect key="frame" x="0.0" y="158.5" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nZc-Lv-Lvx"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="gLz-yH-HHE">
+                                <rect key="frame" x="32" y="175.5" width="290" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLA-78-mJK">
+                                <rect key="frame" x="330" y="198.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NDd-k2-fdc" firstAttribute="centerY" secondItem="FE7-hX-RAv" secondAttribute="centerY" id="3Kr-7f-IFY"/>
+                            <constraint firstItem="rjK-Yq-h8K" firstAttribute="top" secondItem="FE7-hX-RAv" secondAttribute="bottom" constant="16" id="J14-Hk-L5u"/>
+                            <constraint firstItem="gLz-yH-HHE" firstAttribute="top" secondItem="rjK-Yq-h8K" secondAttribute="bottom" constant="16" id="JxB-da-gCY"/>
+                            <constraint firstItem="MqW-tL-vQe" firstAttribute="trailing" secondItem="NDd-k2-fdc" secondAttribute="trailing" constant="8" id="Oip-wy-9In"/>
+                            <constraint firstItem="iLA-78-mJK" firstAttribute="leading" secondItem="NDd-k2-fdc" secondAttribute="leading" id="Tv9-sy-C1h"/>
+                            <constraint firstItem="gLz-yH-HHE" firstAttribute="width" secondItem="FE7-hX-RAv" secondAttribute="width" id="Way-0G-YwF"/>
+                            <constraint firstItem="FE7-hX-RAv" firstAttribute="top" secondItem="MqW-tL-vQe" secondAttribute="top" constant="75" id="cD4-2E-lCW"/>
+                            <constraint firstItem="MqW-tL-vQe" firstAttribute="trailing" secondItem="rjK-Yq-h8K" secondAttribute="trailing" id="eYl-rb-eKa"/>
+                            <constraint firstItem="FE7-hX-RAv" firstAttribute="height" secondItem="d1R-fz-EP1" secondAttribute="height" multiplier="0.08" id="ejD-a4-qiN"/>
+                            <constraint firstItem="FE7-hX-RAv" firstAttribute="width" secondItem="d1R-fz-EP1" secondAttribute="width" multiplier="0.7" id="f0y-vJ-0GT"/>
+                            <constraint firstItem="NDd-k2-fdc" firstAttribute="leading" secondItem="FE7-hX-RAv" secondAttribute="trailing" constant="8" id="fTD-vI-7qG"/>
+                            <constraint firstItem="iLA-78-mJK" firstAttribute="trailing" secondItem="NDd-k2-fdc" secondAttribute="trailing" id="ffg-qx-HIi"/>
+                            <constraint firstItem="rjK-Yq-h8K" firstAttribute="leading" secondItem="MqW-tL-vQe" secondAttribute="leading" id="iIf-nZ-Oxd"/>
+                            <constraint firstItem="gLz-yH-HHE" firstAttribute="leading" secondItem="FE7-hX-RAv" secondAttribute="leading" id="iu6-f6-lWj"/>
+                            <constraint firstItem="FE7-hX-RAv" firstAttribute="leading" secondItem="MqW-tL-vQe" secondAttribute="leading" constant="32" id="kJr-DZ-Vj6"/>
+                            <constraint firstItem="iLA-78-mJK" firstAttribute="centerY" secondItem="gLz-yH-HHE" secondAttribute="centerY" id="o5r-a2-stt"/>
+                            <constraint firstItem="iLA-78-mJK" firstAttribute="height" secondItem="NDd-k2-fdc" secondAttribute="height" id="sVz-G7-Tub"/>
+                            <constraint firstItem="gLz-yH-HHE" firstAttribute="height" secondItem="FE7-hX-RAv" secondAttribute="height" id="yug-P6-Vup"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MqW-tL-vQe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fJS-Fi-Rz4"/>
+                    <connections>
+                        <outlet property="baseCurrencyAmountTextField" destination="FE7-hX-RAv" id="bCt-na-Oax"/>
+                        <outlet property="convertableCurrencyAmountTextField" destination="gLz-yH-HHE" id="1Cr-fm-fmx"/>
+                        <outlet property="convertableCurrencyNameLabel" destination="iLA-78-mJK" id="cha-k6-jNC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXP-Gz-RyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="139"/>
         </scene>
     </scenes>
     <resources>

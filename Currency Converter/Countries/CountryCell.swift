@@ -24,7 +24,7 @@ class CountryCell: UITableViewCell {
         countryNameLabel.text = country.name
         
         if let rate = country.rate {
-            countryRateLabel.text = String(rate)
+            countryRateLabel.text = String(format: "%.2f", rate)
         }
     }
 }

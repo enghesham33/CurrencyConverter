@@ -27,6 +27,9 @@
 		54A8DFC723C5719A00D1F36F /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A8DFC523C5719A00D1F36F /* CountryCell.xib */; };
 		54A8DFC823C5719A00D1F36F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC623C5719A00D1F36F /* CountryCell.swift */; };
 		54A8DFCA23C5793D00D1F36F /* CountriesRatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */; };
+		54A8DFCD23C587F700D1F36F /* ConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFCC23C587F700D1F36F /* ConverterVC.swift */; };
+		54A8DFCF23C58A8500D1F36F /* Converter+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFCE23C58A8500D1F36F /* Converter+ViewModel.swift */; };
+		54A8DFD123C58B1D00D1F36F /* Converter+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFD023C58B1D00D1F36F /* Converter+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		54A8DFC523C5719A00D1F36F /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		54A8DFC623C5719A00D1F36F /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRatesResponse.swift; sourceTree = "<group>"; };
+		54A8DFCC23C587F700D1F36F /* ConverterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterVC.swift; sourceTree = "<group>"; };
+		54A8DFCE23C58A8500D1F36F /* Converter+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Converter+ViewModel.swift"; sourceTree = "<group>"; };
+		54A8DFD023C58B1D00D1F36F /* Converter+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Converter+Injection.swift"; sourceTree = "<group>"; };
 		F3783E4BC501341F4BD4757A /* Pods-Currency Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency Converter.debug.xcconfig"; path = "Target Support Files/Pods-Currency Converter/Pods-Currency Converter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,11 +95,12 @@
 		54A8DF9523C549F300D1F36F /* Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
-				54A8DFB823C5598A00D1F36F /* Countries */,
 				54A8DF9623C549F300D1F36F /* AppDelegate.swift */,
 				54A8DF9C23C549F300D1F36F /* Main.storyboard */,
 				54A8DF9F23C549F400D1F36F /* Assets.xcassets */,
 				54A8DFA123C549F400D1F36F /* LaunchScreen.storyboard */,
+				54A8DFB823C5598A00D1F36F /* Countries */,
+				54A8DFCB23C5867C00D1F36F /* Converter */,
 				54A8DFAB23C54EC200D1F36F /* Resources */,
 				54A8DFAA23C54EBC00D1F36F /* Core */,
 				54A8DFA423C549F400D1F36F /* Info.plist */,
@@ -143,6 +150,16 @@
 				54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */,
 			);
 			path = "Countries+Models";
+			sourceTree = "<group>";
+		};
+		54A8DFCB23C5867C00D1F36F /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				54A8DFCC23C587F700D1F36F /* ConverterVC.swift */,
+				54A8DFCE23C58A8500D1F36F /* Converter+ViewModel.swift */,
+				54A8DFD023C58B1D00D1F36F /* Converter+Injection.swift */,
+			);
+			path = Converter;
 			sourceTree = "<group>";
 		};
 		B8EBE9AB10BA951FE5215C1E /* Frameworks */ = {
@@ -286,8 +303,11 @@
 				54A8DFAF23C557F500D1F36F /* BaseVC.swift in Sources */,
 				54A8DFBE23C55ABC00D1F36F /* Countries+ViewModel.swift in Sources */,
 				54A8DFB723C558CA00D1F36F /* Colors.swift in Sources */,
+				54A8DFCF23C58A8500D1F36F /* Converter+ViewModel.swift in Sources */,
+				54A8DFD123C58B1D00D1F36F /* Converter+Injection.swift in Sources */,
 				54A8DFBC23C559C100D1F36F /* Country.swift in Sources */,
 				54A8DFB123C5581800D1F36F /* UIView+Extensions.swift in Sources */,
+				54A8DFCD23C587F700D1F36F /* ConverterVC.swift in Sources */,
 				54A8DF9723C549F300D1F36F /* AppDelegate.swift in Sources */,
 				54A8DFC423C5696200D1F36F /* Countries+Injection.swift in Sources */,
 				54A8DFCA23C5793D00D1F36F /* CountriesRatesResponse.swift in Sources */,
