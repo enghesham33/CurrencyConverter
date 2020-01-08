@@ -12,6 +12,7 @@ struct Country: Codable {
     var name: String
     var key: String
     var currency: String
+    var rate: Double!
     
     static func decode(data: Data) throws -> Country? {
         do {

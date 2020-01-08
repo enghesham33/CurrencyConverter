@@ -24,6 +24,9 @@
 		54A8DFC023C55B9400D1F36F /* Countries+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFBF23C55B9400D1F36F /* Countries+Repository.swift */; };
 		54A8DFC223C55D1500D1F36F /* Countries+UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC123C55D1500D1F36F /* Countries+UseCases.swift */; };
 		54A8DFC423C5696200D1F36F /* Countries+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC323C5696200D1F36F /* Countries+Injection.swift */; };
+		54A8DFC723C5719A00D1F36F /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54A8DFC523C5719A00D1F36F /* CountryCell.xib */; };
+		54A8DFC823C5719A00D1F36F /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC623C5719A00D1F36F /* CountryCell.swift */; };
+		54A8DFCA23C5793D00D1F36F /* CountriesRatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		54A8DFBF23C55B9400D1F36F /* Countries+Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries+Repository.swift"; sourceTree = "<group>"; };
 		54A8DFC123C55D1500D1F36F /* Countries+UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries+UseCases.swift"; sourceTree = "<group>"; };
 		54A8DFC323C5696200D1F36F /* Countries+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Countries+Injection.swift"; sourceTree = "<group>"; };
+		54A8DFC523C5719A00D1F36F /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		54A8DFC623C5719A00D1F36F /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRatesResponse.swift; sourceTree = "<group>"; };
 		F3783E4BC501341F4BD4757A /* Pods-Currency Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency Converter.debug.xcconfig"; path = "Target Support Files/Pods-Currency Converter/Pods-Currency Converter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +130,8 @@
 				54A8DFBF23C55B9400D1F36F /* Countries+Repository.swift */,
 				54A8DFC123C55D1500D1F36F /* Countries+UseCases.swift */,
 				54A8DFC323C5696200D1F36F /* Countries+Injection.swift */,
+				54A8DFC523C5719A00D1F36F /* CountryCell.xib */,
+				54A8DFC623C5719A00D1F36F /* CountryCell.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				54A8DFBB23C559C100D1F36F /* Country.swift */,
+				54A8DFC923C5793D00D1F36F /* CountriesRatesResponse.swift */,
 			);
 			path = "Countries+Models";
 			sourceTree = "<group>";
@@ -213,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A8DFC723C5719A00D1F36F /* CountryCell.xib in Resources */,
 				54A8DFA323C549F400D1F36F /* LaunchScreen.storyboard in Resources */,
 				54A8DFA023C549F400D1F36F /* Assets.xcassets in Resources */,
 				54A8DFAD23C555E800D1F36F /* countries_list.json in Resources */,
@@ -280,6 +290,8 @@
 				54A8DFB123C5581800D1F36F /* UIView+Extensions.swift in Sources */,
 				54A8DF9723C549F300D1F36F /* AppDelegate.swift in Sources */,
 				54A8DFC423C5696200D1F36F /* Countries+Injection.swift in Sources */,
+				54A8DFCA23C5793D00D1F36F /* CountriesRatesResponse.swift in Sources */,
+				54A8DFC823C5719A00D1F36F /* CountryCell.swift in Sources */,
 				54A8DFB523C558A900D1F36F /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

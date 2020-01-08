@@ -27,4 +27,35 @@ public class Utils {
         }
         return alert
     }
+    
+    class func getLengthAccordingTo(relation: LengthRelation, relativeView: UIView?, percentage: CGFloat) -> CGFloat {
+        
+        switch relation {
+        case .SCREEN_WIDTH:
+            return UIScreen.main.bounds.width * (percentage / 100)
+            
+        case .SCREEN_HEIGHT:
+            return UIScreen.main.bounds.height * (percentage / 100)
+            
+        case .VIEW_WIDTH:
+            if let view = relativeView {
+                return view.frame.size.width * (percentage / 100)
+            }
+            return 0
+            
+        case .VIEW_HEIGHT:
+            if let view = relativeView {
+                return view.frame.size.height * (percentage / 100)
+            }
+            return 0
+        }
+    }
+    
+}
+
+public enum LengthRelation: Int {
+    case SCREEN_WIDTH = 0
+    case SCREEN_HEIGHT = 1
+    case VIEW_WIDTH = 2
+    case VIEW_HEIGHT = 3
 }
